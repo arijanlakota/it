@@ -1,0 +1,21 @@
+.header{
+    width: 950px;
+    height: 100px;
+    margin:auto;
+    margin-top:150px;
+    border: 1px gray solid;
+}
+.content{
+    
+    width: 1000px;
+    height: 1100px;
+    position: fixed;
+    left: 208px;
+    top: 320px;
+    border: 1px gray solid;
+}
+.logo{
+    position: fixed;
+    top:5px;
+    left: 5px;
+}
