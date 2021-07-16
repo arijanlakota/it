@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="login.css" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <label for="fname" >Enter name</label>
+        <input type="text" placeholder="name" name="fname" id="demo" onchange="myFunc()" />
+        <label for="fsname">Enter surname</label>
+        <input type="text" placeholder="name" name="fsname" id="demo1" onchange="myFunc()"/>
+        <label for="frange">Enter years</label>
+        <input type="range" min="0" max="99" name="frange" id="demo2" onchange="myFunc()"/>
+        <label for="fdate">Enter date</label>
+        <input type="datetime" name="fdate" id="demo3" onchange="myFunc()">
+        <label for="student">Are you a student?</label>
+        <input type="checkbox" type="checkbox"  id="demo4" name="student" value="student" onchange="myFunc()"/>
+        <label for="student">Are you in highschool?</label>
+        <input type="checkbox" type="checkbox"  id="demo5" name="student" value="highschool" onchange="myFunc()"/>
+        <label for="student">Do you have driving liscence</label>
+        <input type="checkbox" type="checkbox"  id="demo6" name="student" value="I_have" onchange="myFunc()"/>
+        <label>Choose a job</label>
+        <select>
+            <option value="Pilot">Pilot</option>
+            <option value="Singer">Singer</option>
+            <option value="Driver">Driver</option>
+            <option value="Beautician">Beautician</option>
+        </select>
+        <button value="submit" onclick="SecondFunc()" >Submit</button>
+    </form>
+    <div style="float: right;">
+        <p id="povi"></p>
+        <p id="povi1"></p>
+        <p id="povi2"></p>
+        <p id="povi3"></p>
+        <p id="povi4"></p>
+        <p id="povi5"></p>
+    </div>
+    <div id="didi" style="display:none;">
+        <p id="povip"></p>
+        <p id="povip1"></p>
+        <p id="povip2"></p>
+        <p id="povip3"></p>
+        <p id="povip4"></p>
+        <p id="povip5"></p>
+    </div>
+
+    <script>
+        function myFunc() {
+            let val1 = document.getElementById("demo").value;
+            document.getElementById("povi").innerHTML = val1;
+            document.getElementById("povip").innerHTML = val1;
+            let val2 = document.getElementById("demo1").value;
+            document.getElementById("povi1").innerHTML = val2;
+            document.getElementById("povip1").innerHTML = val2;
+            let val3 = document.getElementById("demo2").value;
+            document.getElementById("povi2").innerHTML = val3;
+            document.getElementById("povip2").innerHTML = val3;
+            let val4 = document.getElementById("demo3").value;
+            document.getElementById("povi3").innerHTML = val4;
+            document.getElementById("povip3").innerHTML = val4;
+            let val5 = document.getElementById("demo4").value;
+            document.getElementById("povi4").innerHTML = val5;
+            document.getElementById("povip4").innerHTML = val5;
+            let val6 = document.getElementById("demo5").value;
+            document.getElementById("povi5").innerHTML = val6;
+            document.getElementById("povip5").innerHTML = val6;
+
+        
+        }
+        function SecondFunc(){
+            document.getElementById("didi").style.display="Block";
+          
+  
+
+        }
+    </script>
+</body>
+</html>

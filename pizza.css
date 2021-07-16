@@ -1,0 +1,309 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: open_Sans;
+    src:url(OpenSans-Regular.ttf);
+
+}
+.header{
+    width: 100%;
+    height: 54px;
+    background-color: #262626;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    position:sticky;
+    top: 0px;
+    border-bottom: 1px solid black;
+}
+.headdiv{
+    display: flex;
+    width: 14%;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.naslov{
+    font-size: 22px;
+    color: white;
+}
+.zadugme{
+    height: 32px;
+    border: none;
+    border-radius:4px;
+    width:94px;
+    color: white;
+    background-color: rgb(86, 211, 86);
+    
+}
+.buttondiv{
+    width: 9%;
+    display: flex;
+    align-items: center;
+}
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1350px;
+  position: relative;
+  /* margin: auto; */
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.newbut{
+  width: 110px;
+  height: 41px;
+  color: white;
+  background-color: rgb(230, 26, 64);
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  right: 0px;
+  top: 452px;
+  border: none;
+
+}
+.newbutP{
+  width: 45px;
+}
+
+.newbut1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  width: 110px;
+  height: 41px;
+  background-color: white;
+  position: fixed;
+  right: 0px;
+  top: 501px;
+  
+}
+.contentdiv{
+  display: flex;
+  width: 87%;
+  margin: auto;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+
+}
+.ch2{
+  font-size: 37px;
+  color: rgb(44, 44, 44);
+
+
+}
+.cbutton{
+  width: 155px;
+  border: none;
+  height: 50px;
+  color: white;
+  background-color: #d2401e;
+  font-size: 15px;
+}
+.galerija{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 87px;
+}
+.kolona_strana{
+  display:flex;
+  flex-direction: column;
+  
+  width: 24%;
+}
+.ch2c{
+  font-size: 28px;
+  margin-top: 5px;
+}
+.glavno{
+  width: 100%;
+  display: flex;
+  background-color: #d2401e;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  height: 370px;
+}
+.naslov_glavno{
+  font-size: 27px;
+  color: white;
+}
+.cooldiv{
+  display: flex;
+  justify-content: space-around;
+  width: 88%;
+  margin-top: 100px;
+}
+.cooldiv1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cooli{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 150px;
+
+}
+.brk{
+  width: 30px;
+  height: 30px;
+}
+.imgdiv{
+  width: 55%;
+  height: 30%;
+  margin-left:100px ;
+}
+.imgclass{
+  z-index: -1;
+  height: 340px;
+  width: 400px;
+}
+.novidiv{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+.parallax {
+  /* The image used */
+  background-image:url("parralac.jpg");
+
+  /* Set a specific height */
+  min-height: 630px;
+  margin-top: 60px; 
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(60%);
+  display: flex;
+  align-items: center;
+  
+
+}
+.pravidiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left:100px;
+  background-color: none;
+  
+}
+.predzadnji{
+  width: 100%;
+  height: 440px;
+  background-repeat: no-repeat;
+  background-color: rgb(38, 70, 52);
+  background-image: url("backgroung.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:90px;
+
+
+}
+.pet{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 17%;
+  margin-top: -45px;
+
+}
+.petimg{
+  width:265px;
+  height:265px;
+}
+.small{
+  width: 400px;
+  height: 340px;
+}
+.zadnji{
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-image: url("zadnjiback.png");
+  background-color: rgb(28, 25, 25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
